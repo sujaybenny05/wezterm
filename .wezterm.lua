@@ -33,10 +33,12 @@ return {
                         action = wezterm.action.SplitHorizontal { domain = "CurrentPaneDomain" },
                 },
                 -- Move focus between panes using Cmd + Alt + Arrow keys
-                { key = "LeftArrow",  mods = "CMD|ALT", action = wezterm.action.ActivatePaneDirection "Left" },
-                { key = "RightArrow", mods = "CMD|ALT", action = wezterm.action.ActivatePaneDirection "Right" },
-                { key = "UpArrow",    mods = "CMD|ALT", action = wezterm.action.ActivatePaneDirection "Up" },
-                { key = "DownArrow",  mods = "CMD|ALT", action = wezterm.action.ActivatePaneDirection "Down" },
+                { key = "h", mods = "CMD", action = wezterm.action.ActivatePaneDirection "Left" },
+                { key = "l", mods = "CMD", action = wezterm.action.ActivatePaneDirection "Right" },
+                { key = "j", mods = "CMD", action = wezterm.action.ActivatePaneDirection "Down" },
+                { key = "k", mods = "CMD", action = wezterm.action.ActivatePaneDirection "Up" },
+
+
                 -- Close current tab with Cmd + W
                 {
                         key = "W",
